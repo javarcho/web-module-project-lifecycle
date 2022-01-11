@@ -1,11 +1,21 @@
-import React from 'react';
+import React from 'react'
+import './App.css';
 
-class App extends React.Component {
-  render() {
-    return(<div>
-      Github Card
-    </div>);
-  }
+import User from './components/User';
+import Followers from './components/Followers';
+import Following from './components/Following';
+
+export default function App() {
+  return (
+    <div className="container">
+    <div className="header">
+    </div>
+    <User/>
+
+    <Followers/>
+    <Following/>
+
+    </div>
+
+  )
 }
-
-export default App;
